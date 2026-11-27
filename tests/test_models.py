@@ -122,7 +122,9 @@ def test_agent_node_label_mapping():
     assert AGENT_NODE_TO_LABEL["quality_agent"] == "quality"
     assert AGENT_NODE_TO_LABEL["test_mapping_agent"] == "test_mapping"
     assert AGENT_NODE_TO_LABEL["docs_agent"] == "docs"
-    assert set(AGENT_NODE_TO_LABEL.values()) == {"security", "quality", "test_mapping", "docs", "maintainability"}
+    assert set(AGENT_NODE_TO_LABEL.values()) == {
+        "security", "quality", "test_mapping", "docs", "maintainability"
+    }
     assert len(AGENT_NODES) == 5
 
 
